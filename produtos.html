@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prod.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <script src="https://kit.fontawesome.com/b3a3a9fb0e.js" crossorigin="anonymous"></script>
+    <title>Batak</title>
+</head>
+<html>
+    <body>   
+        <!--Menu-->
+        <header>
+            <section class="header-logo">
+                <div class="logo">
+                    <img src="assets/nossaEquipe/logoBatak.png" alt="Logo batak">
+                </div>
+         </section>
+         <!-- INICIO DO MENU LATERAL -->
+         <section  class="menu-lateral">
+            <div  class="header-menu-lateral">
+
+                <div  id="sub-btn" onclick="openNav()">
+                   <img   src="assets/nossaEquipe/botao.png" alt="">
+               </div>
+
+                <div id="mySidenav" class="sidenav">
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                   <a href="index.html">Home</a>
+                   <a href="somos.html">Quem somos</a>
+                   <a href="produtos.html">Nossos produtos</a>
+                    <a href="equipe.html">Nossa equipe</a>
+                   <a href="formulario.html"> Contato</a>
+                 </div>
+                  
+               
+
+           </div>
+        </section>
+
+
+          <!-- PRODUTOS CARRINHO -->
+        <section class="produtos-header">
+            <div class="produtos-menu-lateral">
+                <div id="sub-btn-prod" onclick="openProd()">
+                 
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+        
+            </div>
+
+            <div id="mySideProd" class="prodNav">
+                 <a href="produtos.html" class="limpar-prod">Limpar</a>
+                <a href="javascript:void(0)" class="closebtnProd" onclick="closeProd()">&times;</a>
+                <div class=" carrinho">
+
+                    <div class="carrinho-itens">
+
+                      <div class="img-produto">
+
+                        <div class="img">  
+                           <img id="img-prod" src="" alt="" style="width:150px ;">
+                        </div>
+
+                      </div>
+
+
+                      <div class="btn-produtos">
+
+                        <span>-Sabores</span>
+                          <div class="btn">
+                            <button id="sabor1" ></button>
+                            <button id="sabor2"></button>
+                            <button  id="sabor3"></button>
+                          </div>
+
+                        <span>-Acto</span>
+                          <div class="btn">
+                            <button id="acompanhamento1"></button>
+                            <button id="acompanhamento2"></button>
+                            <button id="acompanhamento3"></button>
+                          </div>
+
+                          <span>-Extras</span>
+                          <div class="btn">
+                            <button id="extra1"></button>
+                            <button id="extra2"></button>
+                            <button id="extra3"></button>
+                          </div>
+
+                        
+                     </div>
+                     <p id="check"></p>
+                    </div>
+
+                    <button id="btn-click">Click para ir</button>  
+                  </div>
+            </div>
+        </section>
+
+         <section class="menu-vertical">
+            <nav>
+                <div class="conteudo-nav"><a href="index.html">Home</a></div>
+                <div class="conteudo-nav"><a href="somos.html">Quem somos</a></div>
+                <div class="conteudo-nav"><a href="produtos.html">Nossos produtos</a></div>
+                <div class="conteudo-nav"><a href="equipe.html">Nossa equipe</a></div>
+                <div class="conteudo-nav"><a href="formulario.html"> Contato</a></div>
+
+                <spa><i class="fa-brands fa-facebook-f"></i></spa>            
+                <spa><i class="fa-brands fa-instagram"></i></spa>            
+            </nav>
+         </section>
+        </header>
+        <div class="rectangle">
+            <h1>Nossos Produtos e Serviços</h1>
+        </div>
+
+        <main>
+            <!--div inicial das 3 coxinhas-->
+            <div class="main-box">
+                <div class="box">
+                    <div class="secondbox">
+                        <img class="image" src="assets/image 10.png">
+                    </div>
+
+                    <div class="thirdbox">
+                        <p class="titulo">As principais coxinhas da casa</p><br>
+                        <p class="text">Coxinha Salgada Tradicional.<br>
+                        Coxinha Doce com chocolate e morango.<br>
+                        Coxinha Vegana de Proteina de Soja.</p>
+                    </div>
+                </div>
+            </div>
+
+        <!--Div principal das coxinhas-->
+            <div class="div-main">
+
+                <!--div box-2 são das coxinhas-->
+                <div class="main-coxinhas">
+                    <div class="box-2">
+
+                        <div class="secondbox-2">
+                            <img class="image-2" src="assets/vegana.png">
+                        </div>
+
+                        <div class="thirdbox-2">
+                            <div class="descriptionCox">
+                                <p class="titulo-1">Coxinhas Vegana</p><br>
+                                <p class="text-1">Berinjela + Tempero da casa.<br>
+                                Proteina de Soja + Tempero da casa.<br>
+                                Brócolis cozido + Tempero da casa.</p>
+
+                            </div>
+                        
+                              </div>
+                              <div id="sub-btn1"  onclick=" openProd()" onclick="saborProduct()">
+                                <button class="botao">COMPRAR</button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="box-2">
+
+                        <div class="secondbox-2">
+                            <img class="image-2" src="assets/tradicional.png">
+                        </div>
+
+                        <div class="thirdbox-2">
+                            <div class="descriptionCox-2">
+                                <p class="titulo-2">Coxinhas Tradicionais</p><br>
+                                <p class="text-2">Frango + Tempero da casa.<br>
+                                Frango e Catupiry + Tempero da casa.<br>
+                                Frango e Carne Seca + Tempero da casa.</p>
+
+                            </div>
+                 
+                            
+                        </div>
+                        <div id="sub-btn2"  onclick=" openProd()" onclick="saborProduct()">
+                            <button class="botao">COMPRAR</button>
+                              </div>
+
+                    </div>
+
+                    <div class="box-2">
+
+                        <div class="secondbox-2">
+                            <img class="image-2" src="assets/doce.png">
+                        </div>
+
+                        <div class="thirdbox-2">
+                            <div class="descriptionCox-3">
+                                <p class="titulo-3">Coxinhas Doces</p><br>
+                                <p class="text-3">Brigadeiro + Recheio de coco.<br>
+                                Coco + Doce de leite.<br>
+                                Chocolate e brigadeiro + Morango</p>
+
+                            </div>
+                        </div>
+                        <div id="sub-btn3"  onclick=" openProd()" onclick="saborProduct()">
+                            <button class="botao">COMPRAR</button>
+                        </div>
+                    </div>
+                
+                    <!--Div principal do video, mapa e endereço-->
+                    <div class="container">
+
+                        <!--div do video-->
+                        <div class="meme">
+                            <video src="video/animacao.mp4" ></video>
+                        </div>
+
+                        <!--div do mapa-->
+                        <div class="localization">
+                            <div class="maps">
+                                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1545.7121130035828!2d-43.25792908354237!3d-22.863759123186455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                                    1!3m3!1m2!1s0x997c013902f0c3%3A0xa1ad7b4cb85e0ddb!2sSenac%20Bonsucesso!5e0!3m2!1spt-BR!2sbr!4v1664074641888!5m2!1spt-BR!2sbr"
+                                    width="130px" height="140px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                            <!--div da descrição do endereço-->
+                            <div class="eddress">
+                                
+                                <img src="assets/whats.png" alt="">
+                                <img src="assets/ifood.png" alt="">
+                                <img src="assets/ubereats.png" alt="">
+                                <img src="assets/rappi.png" alt="">
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>copyright ©</footer>
+
+
+<script src="js/produto.js"></script>
+    </body>
+    
+</html>

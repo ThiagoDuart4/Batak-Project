@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* INICIO DO MOBILE */
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: 12vh;
+        background-color: #EF7F22;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    /* STYLE DA LOGO */
+    header .header-logo {
+        background-color: aliceblue;
+        width: 60px;
+        height: 60px;
+        border-radius: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+
+    }
+
+    header .logo img {
+        width: 80px;
+    }
+
+    /* ESTILIZAÇOES DO MENU LATERAL */
+
+    .menu-lateral {}
+
+    .menu-vertical {
+        display: none;
+    }
+
+    #sub-btn {
+        margin-right: 20px;
+        padding: 5px;
+
+    }
+
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #f1f1f1;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #d37528;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #F9C57C;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+  
+}
+
+
+
+
+    /*//////// INICIO DO DESKTOP /////////*/
+
+
+@media screen and (min-width: 600px) {
+
+
+    body {
+        width: 100%;
+    }
+
+    /* INICIO DA HEADER */
+    header {
+        width: 100%;
+        height: 12vh;
+        background-color: #EF7F22;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    /* STYLE DA LOGO  DESKTOP*/
+    header .header-logo {
+        background-color: aliceblue;
+        width: 70px;
+        height: 70px;
+        border-radius: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+
+    header .logo img {
+        width: 90px;
+    }
+
+
+    .menu-lateral {
+        display: none;
+    }
+
+    /* menu vertical */
+
+    .menu-vertical {
+        padding: 20px;
+        margin-left: 50px;
+    }
+
+    .menu-vertical nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .conteudo-nav:nth-child(4) {
+        border-right: 1px solid #F9C57C;
+    }
+
+    .conteudo-nav {
+        padding: 10px;
+
+
+    }
+
+
+    .menu-vertical a {
+        color: #f1f1f1;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.2s;
+        margin-left: 10px;
+
+    }
+
+    .menu-vertical a:nth-child(4) {
+        border: none;
+    }
+
+    .menu-vertical a:hover {
+        border-bottom: 3px solid white;
+    }
+
+
+    .menu-vertical nav i {
+        font-size: 1.4em;
+        color: #f1f1f1;
+        margin-left: 10px;
+        cursor: pointer;
+
+    }
+
+
+
+
+
+    main{height: 500vh;}
+
+
+
+    /* ALTERAÇOES DO THIAGO PARA MELHORIA DA  PAGINA  */
+    
+    
+    /* slide SWIPPER */
+    
+    .swiper {
+        width: 100%;
+      height: 400px;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+    
+      /* texto da legenda */
+    
+    
+    
+      /* Implementando aside */
+      aside{
+        width: 100%;
+        height: 50px;
+        background-color:#F9C57C;
+        display: flex;
+        align-items: center;
+       padding: 5px 20px;
+       
+    }
+    
+    aside h2{
+        color:  rgb(255, 255, 255);
+        }
+    
+    
+    .cards{
+        width: 100%;
+      display: flex;
+      align-items: center;
+    height: 60vh;
+    justify-content: center;
+    }
+    
+    .card{
+      width:35%;
+      margin: 30px;
+      position: relative;
+      background-color:#fdedd6;
+      height: 300px;
+      border-radius: 15px;
+      box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+      display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:20px;
+    max-width: 300px;
+    min-width: 150px;
+    }
+    
+    
+    
+    .card:hover{
+        transform:translatey(10px);
+        transition: 0.6s;
+    }
+    
+    .card section{
+        width: 100%;
+    }
+    
+    .card .card-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:#F9C57C;
+      border-radius: 15px;
+      height:200px;
+    }
+    
+    .card .card-img img{
+        width: 200px;
+    }
+    
+    .card .card-description{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card .card-description p{
+        font-size: 0.7em;
+    
+    }
+     .card .card-description h3{
+        font-size:1.1em;
+        padding: 8px;
+        color:  #EF7F22;
+    
+    }
+    
+    
+    .card .card-description a{
+        font-size: 0.7em;
+    padding-top: 5px;
+    text-decoration: none;
+    
+    } 
+    
+    .NossaEquipe{
+        width: 100%;
+        height: 500px;
+        background-color:  #EF7F22;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    }
+    
+    .NossaEquipe h1{
+        color: white;
+        font-size:3em;
+    }
+    .equipe{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    
+    }
+    .card-equipe{
+        width: 150px;
+        height: 150px;
+        border-radius: 200px;
+    background-color: white;
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .card-equipe img{
+        width: 90%;
+        border-radius: 200px;
+    }
+    
+    
+    .card-equipe a{
+        position: absolute;
+        color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 80px;
+        width:150px ;
+       height: 150px;
+    }
+    
+    .card-equipe a:hover{
+     background-color: #f9c57c8a;
+       color: white;
+       transition: 0.4s;
+    }
+    
+    
+    /* CARD MAIOR,onde fica a localizaçao */
+    
+    .localization{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .localization .card-localization {
+        width: 70%;
+        height: 500px;
+        background-color:#fdedd6;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        margin-top: 100px;
+        border-radius: 15px;
+        display: flex;
+    }
+    
+    .localization .card-localization  section{
+        width: 50%;
+    }
+    
+    .card-image img{
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    
+    .card-localization-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        height: 100%;
+        
+    }
+    
+    /* Box1 */
+    .card-localization-info .box1{
+      
+        width:90%;
+        height: 400px;
+        background-color: #F9C57C;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    /* GOOGLE MAPS */
+    
+    .card-localization-info .box1 iframe{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* box2 */
+    .card-localization-info .box2{
+        background-color: #d37528;
+        width: 90%;
+        border-radius: 15px;
+        height: 100px;
+        margin-top: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    
+    .card-localization-info .box2 img{
+        width: 50px;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+    
+    .card-localization-info .box2 img:hover{
+        transform: scale(0.8,0.8);
+        transition: 0.4s;
+    }
+    
+    /* Quem Somos */
+    
+    .quemSomos{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+    }
+    
+    .quemSomos section{
+        width: 100%;
+        height: 50%;
+      
+    }
+    
+    /* O Que vem da esquerda pra direitra */
+    
+    .quemSomos-Left{
+       background-color:#EF7F22;
+       display: flex;
+       padding: 60px;
+    
+    }
+    
+    
+    .quemSomos img{
+        width:250px;
+        height: 250px;
+        margin:20px;
+        border-radius:10px;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.897);
+        margin-left: 10px;
+        animation: float 5s ease-in-out infinite;
+     
+    }
+    
+    .quemSomos-Left .quemSomos-Text{
+        margin-top: 10px;
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .quemSomos-Left .quemSomos-Text h1{
+        color: white;
+        font-size: 2.5em;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .quemSomos-Left .quemSomos-Text p{
+        width: 80%;
+        font-size: 0.8em;
+        color:rgba(64, 29, 88, 0.801) ;
+    }
+    
+    @keyframes float {
+        0%, 100% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateY(15px);
+        }
+      }
+    
+    /* o que vem da direita para esquerda */
+    .quemSomos-Rigth{
+        background-color: #F9C57C;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 70px;
+    }
+    
+    .quemSomos-Rigth .quemSomos-Text{
+        margin-top: 10px;
+    text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .quemSomos-Rigth .quemSomos-Text h1{
+       color:rgba(64, 29, 88, 0.801) ;
+        font-size: 2.5em;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .quemSomos-Rigth .quemSomos-Text p{
+        width: 80%;
+        color: white ;
+        font-size: 0.8em;
+    }
+    
+    
+    
+
+
+
+
+
+
+
+
+
+    footer {
+        background-color: #F9C57C;
+        text-align: center;
+        width: 100%;
+        height: 9.45%;
+        padding: 10px;
+    }
+}
+
+

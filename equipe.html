@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe</title>
+    <link rel="stylesheet" href="css/equipe.css">
+    <script src="js/equipe.js"></script>
+    <script src="https://kit.fontawesome.com/b3a3a9fb0e.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+  
+</head>
+</head>
+<body>
+<!-- INICIO DO BORY -->
+    <header>
+         <section class="header-logo">
+                <div class="logo">
+                    <img src="assets/nossaEquipe/logoBatak.png" alt="Logo batak">
+                </div>
+         </section>
+         <!-- INICIO DO MENU LATERAL -->
+         <section  class="menu-lateral">
+            <div  class="header-menu-lateral">
+
+                <div  id="sub-btn" onclick="openNav()">
+                   <img   src="assets/nossaEquipe/botao.png" alt="">
+               </div>
+
+                <div id="mySidenav" class="sidenav">
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                   <a href="index.html">Home</a>
+                   <a href="somos.html">Quem somos</a>
+                   <a href="produtos.html">Nossos produtos</a>
+                   <a href="equipe.html">Nossa equipe</a>
+                   <a href="formulario.html"> Contato</a>
+                 </div>
+                  
+               
+
+           </div>
+        </section>
+
+         <section class="menu-vertical">
+            <nav>
+                <div class="conteudo-nav"><a href="index.html">Home</a></div>
+                <div class="conteudo-nav"><a href="somos.html">Quem somos</a></div>
+                <div class="conteudo-nav"><a href="produtos.html">Nossos produtos</a></div>
+                <div class="conteudo-nav"><a href="equipe.html">Nossa equipe</a></div>
+                <div class="conteudo-nav"><a href="formulario.html"> Contato</a></div>
+
+                <spa><i class="fa-brands fa-facebook-f"></i></spa>            
+                <spa><i class="fa-brands fa-instagram"></i></spa>            
+            </nav>
+         </section>
+
+    </header>
+<!-- Inicio da main -->
+    <main>
+        <!-- titulo principal -->
+        <aside>
+            <h1>Nossa equipe</h1>
+        </aside>
+
+        <!-- conteudo principal -->
+        <section class="container-main">
+             <!-- slide --> 
+             <div class="slide-container">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"> 
+                            <img  src="assets/nossaEquipe/Equipe1.jpg" ></img>
+                            <div class="text">
+                                <h1>Equipe batak</h1>
+                                <span>Pronta para te atender</span>
+                                <p>"Nunca vi uma equipe tao dedicada a entregar um otimo trabalho, com profisionalismo e dedicaçao ao cliente" <i>Fiore Flantino</i></p>
+                            </div>
+                        </div>
+                      <div class="swiper-slide">
+                         <img  src="assets/nossaEquipe/EQUIPECOZINHA.jpg" ></img>
+                        <div class="text">
+                            <h1>Equipe batak</h1>
+                            <span>Pronta para te atender</span>
+                            <p>"Nunca vi uma equipe tao dedicada a entregar um otimo trabalho, com profisionalismo e dedicaçao ao cliente" <i>Fiore Flantino</i></p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                <br>
+                <!-- circulos -->
+                <div style="text-align:center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+                <div class="conteudo-main">
+
+                    <!-- card equipe -->
+                        <div class="card-main">
+                            <section class="card-img">
+                                <div><img src="" alt=""></div>
+                            </section>
+
+                            <section  class="conteudo-card">
+                                    <div>
+                                        <h2><span></span>Quem somos?</h2>
+                                        <hr>
+                                        <p>Batak,vem da croata e significa coxinha e esta atrelado ao grande amor do nosso chef e CEO, a coxinha brasileira, e assim foi criado Coxinha's Batak</p>
+                                    </div>
+                            </section>
+                        </div>
+                        
+                    <!--card Ceo  -->
+                    <div class="card-main">
+                        <section class="card-img">
+                            <div><img src="assets/nossaEquipe/Prancheta 1.png" alt=""></div>
+                        </section>
+                        <section class="conteudo-card">
+                                <div> 
+                                    <h2> <span></span>CEO</h2>
+                                   <hr>
+                                    <p><i>Tonah redriog</i> nascido em 1989 foi um grande impresario que veio de uma pequena cidade em na croacia, e se tornou um grande Ceo e chefe </p>
+                                </div>
+                        </section>
+                    </div>
+
+                    </div>
+                </div>
+        </section>
+            
+   
+    </main>
+
+    <footer>
+        <div class="conteudo-footer">
+            <h3>CopyRight 2022</h3>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+</body>
+</html>
