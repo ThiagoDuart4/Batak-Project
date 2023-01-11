@@ -1,0 +1,472 @@
+
+/* INICIO DO TABLET */
+
+
+@media screen and (max-width: 900px) {
+    
+    body {
+        width: 100%;
+    }
+
+    main{height: 500vh;
+    }
+
+    header {
+        width: 100%;
+        height: 12vh;
+        background-color: #EF7F22;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    /* STYLE DA LOGO */
+    header .header-logo {
+        background-color: aliceblue;
+        width: 60px;
+        height: 60px;
+        border-radius: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    }
+
+    
+
+    header .logo img {
+        width: 80px;
+    }
+
+    /* ESTILIZAÇOES DO MENU LATERAL */
+
+    .menu-lateral {}
+
+    .menu-vertical {
+        display: none;
+    }
+
+    #sub-btn {
+        margin-right: 20px;
+        padding: 5px;
+
+    }
+
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        background-color: #f1f1f1;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #d37528;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #F9C57C;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+     /* slide SWIPPER */
+    
+     .swiper {
+        width: 100%;
+      height: 400px;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+    
+      /* texto da legenda */
+
+       /* Implementando aside */
+       aside{
+        width: 100%;
+        height: 50px;
+        background-color:#F9C57C;
+        display: flex;
+        align-items: center;
+       padding: 5px 20px;
+       
+    }
+    
+    aside h2{
+        color:  rgb(255, 255, 255);
+        font-size: 1em;
+        }
+    
+
+        .cards{
+            width: 100%;
+          display: flex;
+          align-items: center;
+        height: 150vh;
+        justify-content: center;
+        flex-direction: column;
+        }
+        
+        .card{
+          width:45%;
+          margin: 30px;
+          position: relative;
+          background-color:#fdedd6;
+          height: 300px;
+          border-radius: 15px;
+          box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+          display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding:20px;
+        max-width: 300px;
+        min-width: 150px;
+        }
+        
+        
+        
+        .card:hover{
+            transform:translatey(10px);
+            transition: 0.6s;
+        }
+        
+        .card section{
+            width: 100%;
+        }
+        
+        .card .card-img{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color:#F9C57C;
+          border-radius: 15px;
+          height:200px;
+        }
+        
+        .card .card-img img{
+            width: 200px;
+        }
+        
+        .card .card-description{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .card .card-description p{
+            font-size: 0.7em;
+        
+        }
+         .card .card-description h3{
+            font-size:1.1em;
+            padding: 8px;
+            color:  #EF7F22;
+        
+        }
+        
+        
+        .card .card-description a{
+            font-size: 0.7em;
+        padding-top: 5px;
+        text-decoration: none;
+        
+        } 
+
+        .NossaEquipe{
+            width: 100%;
+            height: 400px;
+            background-color:  #EF7F22;
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        }
+        
+        .NossaEquipe h1{
+            color: white;
+            font-size:3em;
+        }
+        .equipe{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        
+        }
+        .card-equipe{
+            width: 95px;
+            height: 95px;
+            border-radius: 200px;
+        background-color: white;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        
+        .card-equipe img{
+            width: 85px;
+            border-radius: 200px;
+        }
+        
+        
+        .card-equipe a{
+            position: absolute;
+            color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 80px;
+            width:95px ;
+           height: 95px;
+        }
+        
+        .card-equipe a:hover{
+         background-color: #f9c57c8a;
+           color: white;
+           transition: 0.4s;
+        }
+        
+
+
+
+         /* CARD MAIOR,onde fica a localizaçao */
+    
+    .localization{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .localization .card-localization {
+        width: 90%;
+        height: 450px;
+        background-color:#fdedd6;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        margin-top: 100px;
+        border-radius: 15px;
+        display: flex;
+    }
+    
+    .localization .card-localization  section{
+        width: 50%;
+    }
+    
+    .card-image img{
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    
+    .card-localization-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        height: 100%;
+        
+    }
+    
+    /* Box1 */
+    .card-localization-info .box1{
+      
+        width:100%;
+        height: 200px;
+        background-color: #F9C57C;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    /* GOOGLE MAPS */
+    
+    .card-localization-info .box1 iframe{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* box2 */
+    .card-localization-info .box2{
+        background-color: #d37528;
+        width: 90%;
+        border-radius: 15px;
+        height: 100px;
+        margin-top: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    
+    .card-localization-info .box2 img{
+        width: 42px;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+    
+    .card-localization-info .box2 img:hover{
+        transform: scale(0.8,0.8);
+        transition: 0.4s;
+    }
+
+     /* Quem Somos */
+    
+     .quemSomos{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+    }
+    
+   
+
+     /* CONTATO */
+    
+     .contato{width: 100%;
+        height: 80vh;
+        display: flex;
+       background-color:rgba(59, 30, 78, 0.801) ;
+       margin-top: 100px;
+      
+    }
+    
+    .contato section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+    }
+    
+    
+    .contato section .titulo{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .contato section .titulo span{
+        width: 20px;
+        height: 3px;
+    background-color:  #F9C57C;;
+    border-radius: 5px;
+    }
+    
+    
+    .contato section .titulo h3{
+        font-size: 1em ;
+        color:#F9C57C;
+        margin-left: 5px
+        ;
+    }
+    
+    
+    .contato section h1{
+        width: 400px;
+        font-size: 2em;
+        color:rgba(64, 29, 88, 0.801) ;
+    }
+    
+    .contato section p{
+        font-size: 0.8em;
+        color: #d37528;
+        opacity: 0.8;
+        margin-top: 10px
+    }
+    
+    .contato section .contato-input{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contato section .contato-input button{
+        margin-top: 40px;
+        height: 50px;
+        border: none;
+        background-color: #d37528;
+        border-radius: 10px;
+        color: #f1f1f1;
+        
+    
+    }
+    .contato section .contato-input button:hover{
+        opacity: 0.8;
+    transition: 0.4s;
+    cursor: pointer;
+    }
+    
+    
+    
+    .contato section textarea{
+        width: 400px;
+        height: 200px;
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+        
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.897);
+    }
+    
+    
+
+    footer{display: none;}
+}
+
+
+
+
+
+

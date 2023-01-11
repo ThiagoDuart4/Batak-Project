@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    background-color: #F9C57C;
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    padding: 20px;
+}
+
+
+
+.divisao1{
+    display: flex;
+ 
+}
+
+.divisao1 .categorias{display: flex;
+flex-direction: column;
+margin-left: 30px;
+}
+
+.divisao1 .categorias h3{
+
+    margin-bottom: 5px;
+    color:rgba(64, 29, 88, 0.801) ;
+}
+
+.divisao1 .categorias a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.divisao1 .categorias a:hover{
+    transition: 0.4s;
+    background-color:rgba(64, 29, 88, 0.801) ;
+}
+.divisao2{
+    margin-left: 30px;
+
+}
+
+.infos-loja{
+    display: flex;
+    margin-top: 50px;
+   width: 90%;
+
+   justify-content:space-between ;
+}
+
+.infos-loja .localizar-loja{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.divisao2 h3{
+    margin-bottom: 5px;
+    color:rgba(64, 29, 88, 0.801)
+}
+
+
+.infos-loja  span{
+    color: white;
+    font-size: 0.8em;
+}
+
+
+.infos-loja .localizar-loja button{
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d37528;
+    margin-top: 5px;
+    color: white;
+  
+}
+
+.infos-loja .redes  span i {
+   font-size: 2em;
+   margin-left: 10px;
+  
+}
+
+.infos-loja .redes  span i:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.4s;
+}
+
+.infos-loja .email .email-input input{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.infos-loja .email .email-input button{ 
+    height: 40px;
+    width: 30px;
+   position: relative;
+   left: -10px;
+background-color: #d37528;
+border: none;
+border-radius: 0px 10px 10px 0px;
+}
+
+.infos-loja button:hover{
+    opacity: 0.8;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.bancos{
+    margin-top: 20px;
+} 
+

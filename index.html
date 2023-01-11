@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablete.css">
+    <link rel="stylesheet" href="css/global.css">
     <script src="js/batak.js"></script>
     <script src="https://kit.fontawesome.com/b3a3a9fb0e.js" crossorigin="anonymous"></script>
     <link
@@ -81,8 +84,11 @@
     
             </div>
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
           </div>
       
+
     
     
                 <!-- produtos  -->
@@ -321,9 +327,20 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

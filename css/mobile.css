@@ -1,0 +1,94 @@
+
+
+/* INICIO DO MOBILE HOME */
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: 12vh;
+        background-color: #EF7F22;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    /* STYLE DA LOGO */
+    header .header-logo {
+        background-color: aliceblue;
+        width: 60px;
+        height: 60px;
+        border-radius: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+
+    }
+
+    header .logo img {
+        width: 80px;
+    }
+
+    /* ESTILIZAÇOES DO MENU LATERAL */
+
+    .menu-lateral {}
+
+    .menu-vertical {
+        display: none;
+    }
+
+    #sub-btn {
+        margin-right: 20px;
+        padding: 5px;
+
+    }
+
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #f1f1f1;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #d37528;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #F9C57C;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+  
+}
+
+
