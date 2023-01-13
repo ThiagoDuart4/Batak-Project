@@ -186,6 +186,7 @@
     padding:20px;
     max-width: 300px;
     min-width: 150px;
+   visibility: hidden;
     }
     
     
@@ -306,7 +307,8 @@
     }
     
     .localization .card-localization {
-        width: 70%;
+        width: 60%;
+        max-width: 900px;
         height: 500px;
         background-color:#fdedd6;
         box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
@@ -385,8 +387,8 @@
     
     .quemSomos section{
         width: 100%;
-        max-width: 1500px;
         height: 50%;
+    
       
     }
     
@@ -404,7 +406,6 @@
     .quemSomos img{
         width:250px;
         height: 250px;
-        margin:20px;
         border-radius:10px;
         box-shadow: 0 1px 20px rgba(0, 0, 0, 0.897);
         margin-left: 10px;
@@ -431,6 +432,7 @@
     
     .quemSomos-Left .quemSomos-Text p{
         width:80%;
+        max-width: 800px;
         font-size: 0.8em;
         color:rgba(64, 29, 88, 0.801) ;
     }
@@ -450,10 +452,15 @@
         display: flex;
         flex-direction: row-reverse;
         padding: 70px;
+        align-items: center;
+        justify-content: center;
+       
     }
+    
     
     .quemSomos-Rigth .quemSomos-Text{
         margin-top: 10px;
+      
     text-align: center;
         display: flex;
         align-items: center;
@@ -461,6 +468,7 @@
     }
     
     
+
     .quemSomos-Rigth .quemSomos-Text h1{
        color:rgba(64, 29, 88, 0.801) ;
        position: relative;
@@ -471,6 +479,7 @@
     
     .quemSomos-Rigth .quemSomos-Text p{
         width: 80%;
+        max-width: 800px;
         color: white ;
         font-size: 0.8em;
     }
