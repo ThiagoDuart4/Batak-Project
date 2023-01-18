@@ -1,13 +1,16 @@
 
-window.sr=ScrollReveal({ reset:true})
 
-sr.reveal(' .card',{duration:1500})
-sr.reveal(' .card-localization',{duration:1500})
-sr.reveal(' .card-equipe',{duration:1500})
-sr.reveal(' .quemSomos-Left',{duration:1500})
-sr.reveal(' .quemSomos-Rigth',{duration:1500})
-sr.reveal(' .quemSomos-Rigth',{duration:1500})
-sr.reveal(' .contato-info',{duration:1500})
+
+        window.sr=ScrollReveal({ reset:true})
+
+        sr.reveal(' .card',{duration:1500})
+        sr.reveal(' .card-localization',{duration:1500})
+        sr.reveal(' .card-equipe',{duration:1500})
+        sr.reveal(' .quemSomos-Left',{duration:1500})
+        sr.reveal(' .quemSomos-Rigth',{duration:1500})
+        sr.reveal(' .quemSomos-Rigth',{duration:1500})
+        sr.reveal(' .contato-info',{duration:1500})
+        
 
 // menu lateral
 

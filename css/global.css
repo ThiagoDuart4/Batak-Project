@@ -18,8 +18,173 @@ body {
 
 
 
+ /* INICIO DA HEADER */
+ header {
+    z-index: 900;
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    background-color: #EF7F22;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+transition: 0.4s;
+}
 
-/* footer */
+
+
+
+
+/* STYLE DA LOGO  DESKTOP*/
+header .header-logo {
+    background-color: aliceblue;
+    width: 70px;
+    height: 70px;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+header .logo img {
+    width: 90px;
+}
+
+
+.menu-lateral {
+    display: none;
+}
+
+/* menu vertical */
+
+.menu-vertical {
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.menu-vertical nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .conteudo-nav:nth-child(4) {
+    border-right: 1px solid #F9C57C;
+}
+
+.conteudo-nav {
+    padding: 10px;
+
+
+}
+
+
+.menu-vertical a {
+    color: #f1f1f1;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-left: 10px;
+
+}
+
+.menu-vertical a:nth-child(4) {
+    border: none;
+}
+
+.menu-vertical a:hover {
+    border-bottom: 3px solid white;
+}
+
+
+.menu-vertical nav i {
+    font-size: 1.4em;
+    color: #f1f1f1;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 600px) {
+/* HEADER MOBILE */
+
+ .menu-lateral {
+    display: block;
+ }
+
+    .menu-vertical {
+        display: none;
+    }
+
+    #sub-btn {
+        margin-right: 20px;
+        padding: 5px;
+
+    }
+
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        background-color: #f1f1f1;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #d37528;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #F9C57C;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+}
+   /* Implementando aside */
+ 
+   aside{
+    width: 100%;
+    height: 50px;
+    background-color:#F9C57C;
+    display: flex;
+    align-items: center;
+   padding: 5px 20px;
+   
+}
+
+aside h2{
+    color:  rgb(255, 255, 255);
+    }
+
+
+/* footer  DESKTOP*/
 
 footer {
     background-color: #F9C57C;
@@ -139,3 +304,8 @@ border-radius: 0px 10px 10px 0px;
     margin-top: 20px;
 } 
 
+
+
+.card, .card-localization,.card-equipe,.quemSomos-Left,.quemSomos-Rigth,.contato-info{
+  visibility: hidden;
+}
